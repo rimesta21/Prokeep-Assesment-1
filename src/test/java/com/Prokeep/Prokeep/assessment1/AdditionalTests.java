@@ -81,7 +81,7 @@ public class AdditionalTests {
         ResponseEntity<String> re2 = messageController.processMessage("test2", "message2");
         Assertions.assertEquals(200, re1.getStatusCodeValue());
         Assertions.assertEquals(200, re2.getStatusCodeValue());
-        //No output means status code is returned before messages are still being processed
+        //No output means status code is returned while messages are still being processed
         Assertions.assertNull(out);
     }
 
