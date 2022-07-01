@@ -48,19 +48,19 @@ public class MessageControllerTestParallel {
 
     @Test
     public void runInParallel1() throws InterruptedException {
-        System.out.println(System.currentTimeMillis());
+        //System.out.println(System.currentTimeMillis());
         time1 = messageService.processMessage("hello1");
     }
 
     @Test
     public void runInParallel2() throws InterruptedException {
-        System.out.println(System.currentTimeMillis());
+        //System.out.println(System.currentTimeMillis());
         time2 = messageService.processMessage("hello2");
     }
 
     @Test
     public void runInParallel3() throws InterruptedException {
-        System.out.println(System.currentTimeMillis());
+        //System.out.println(System.currentTimeMillis());
         time3 = messageService.processMessage("hello3");
     }
 
